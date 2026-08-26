@@ -10,7 +10,7 @@ export function App() {
   return (
     
     <Routes>
-      <Route  path="/" element={<HomePage />} /> 
+      <Route  index element={<HomePage />} /> 
       <Route  path="checkout" element={<CheckoutPage />} /> 
 
      </Routes>
