@@ -4,6 +4,7 @@ import { Header } from '../components/Header';
 export function OrdersPage(){
   return (
     <>
+    <title>OrderPage</title>
     <Header />
           <div className="header">
       <div className="left-section">
