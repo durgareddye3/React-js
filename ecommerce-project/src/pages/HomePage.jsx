@@ -1,8 +1,23 @@
+
+import axios from 'axios';
 import { Header } from '../components/Header';
 import { products } from '../../Starting-code/data/products';
 import './HomePage.css';
 
 export function HomePage(){
+
+ //fetch('http://localhost:3000/api/products')
+ 
+//       .then((respones)=>{
+  //     return respones.json() }).then((data)=>{
+    //  console.log(data);
+
+   //}) 
+
+  axios.get('http://localhost:3000/api/products').then((respones)=>{
+    console.log(respones.data)
+
+  })
   return(
     <>
       <Header />
