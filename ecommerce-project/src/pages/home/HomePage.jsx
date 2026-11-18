@@ -6,6 +6,7 @@ import { Header } from '../../components/Header';
 import { ProductsGrid } from './ProductsGrid';
 import './HomePage.css';
 
+
 export function HomePage({cart, loadCart}){
 
  //fetch('http://localhost:3000/api/products')
@@ -36,6 +37,9 @@ export function HomePage({cart, loadCart}){
       <Header cart={cart} />
         <div className="home-page">
           <ProductsGrid products={products} loadCart={loadCart} />
+        </div>
+        <div>
+          <a href='product.jsx'>Prodcut</a>
         </div>
     </>
   );
