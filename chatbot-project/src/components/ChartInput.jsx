@@ -1,9 +1,5 @@
 import { useState } from "react";
-
 import { Chatbot} from 'supersimpledev';
-
-
-
 export function ChartInput({chartMessages, setChartMessages})
       {
         const [inputText, setInputText] = useState('');

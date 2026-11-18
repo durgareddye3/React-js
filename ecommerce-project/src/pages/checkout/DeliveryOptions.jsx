@@ -14,7 +14,6 @@ export function DeliveryOptions({deliveryOptions , cartItem , loadCart}){
                         if(deliveryOption.priceCents > 0){
                           priceString = `${formatMoney(deliveryOption.priceCents)} - Shipping`
                         }
-
                         const updateDeliveryOtion = async () =>{
                         await axios.put(`/api/cart-items/${cartItem.productId}`,{
                             deliveryOptionId:deliveryOption.id 
